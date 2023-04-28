@@ -15,6 +15,7 @@ export const handler = async (event, context) => {
     body: JSON.stringify({
       id,
       status: "success",
+      statusCode: 200,
       data: event,
     }),
   };
