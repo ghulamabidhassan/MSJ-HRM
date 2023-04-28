@@ -1,13 +1,7 @@
 import { nanoid } from "nanoid";
-import { data } from "./data";
+import { data } from "../data";
 
 const id = nanoid(8);
-
-const person = {
-  name: "Abid",
-};
-
-let str = "How are you? get me this";
 
 export const handler = async (event, context) => {
   return {
@@ -16,7 +10,8 @@ export const handler = async (event, context) => {
       id,
       status: "success",
       statusCode: 200,
-      data: event,
+      data,
+      output: event,
     }),
   };
 };
