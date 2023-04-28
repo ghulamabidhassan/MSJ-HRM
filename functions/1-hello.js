@@ -7,7 +7,7 @@ const id = nanoid(8);
 
 export const handler = async (event, context) => {
   const pool = await mysql.createPool(process.env.DATABASE_URL);
-  const [result] = await pool.query("select * from abidtable");
+  const [result] = await pool.query("select email from abidtable");
 
   return {
     statusCode: 200,
