@@ -8,7 +8,7 @@ export const handler = async (event, context) => {
   const pool = await mysql.createPool(process.env.DATABASE_URL);
   const [result] = await pool.query("select * from abidtable");
   const method = event.httpMethod;
-  const ref = event.headers.referer;
+  const ref = event.headers.host;
 
   if (method === "GET") {
     return {
