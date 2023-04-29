@@ -5,10 +5,13 @@ import { nanoid } from "nanoid";
 dotenv.config();
 
 export const handler = async (event, context) => {
+  const ref = event.headers.host;
+  if (ref !== "https://serverless-test-abid.netlify.app") {
+    return null;
+  }
   const pool = await mysql.createPool(process.env.DATABASE_URL);
   const [result] = await pool.query("select * from abidtable");
   const method = event.httpMethod;
-  const ref = event.headers.host;
 
   if (method === "GET") {
     return {
