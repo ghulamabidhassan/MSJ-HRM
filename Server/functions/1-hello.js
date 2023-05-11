@@ -61,6 +61,9 @@ const router = express.Router();
 app.use(fileUpload());
 app.use(express.json());
 app.use("/.netlify/functions/1-hello", router);
+app.all("*", (req, res) => {
+  res.status(404).send("404 not found");
+});
 
 router.get("/", async (req, res) => {
   res.send("home page");
