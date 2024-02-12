@@ -13,7 +13,7 @@ app.all("*", (req, res) => {
 });
 
 router.get("/", (req, res) => {
-  res.json({ msg: "hey" });
+  res.json({ msg: "hey serverless is working fine" });
 });
 
 // router.get("/testlogin", (req, res) => {
