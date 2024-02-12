@@ -1,0 +1,26 @@
+.main-shared-layout-user {
+  height: 100vh;
+  width: 100%;
+  // background-color: #f1f6f9;
+  background-color: white;
+  font-size: 1em;
+}
+
+.user-navbar-sec-three {
+  position: fixed;
+  bottom: 0;
+}
+
+.user-navbar-sec-two {
+  // background-color: blue;
+  height: 100%;
+  width: 100%;
+}
+
+.shared-layout-staff-sidebar {
+  display: none;
+}
+
+.shared-layout-staff-sidebar-block {
+  display: block;
+}

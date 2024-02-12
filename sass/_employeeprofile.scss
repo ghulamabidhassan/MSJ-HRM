@@ -1,0 +1,58 @@
+.main-employee-profile {
+  height: auto;
+  width: 100%;
+  padding: 3em 2em;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.25em;
+  border: 1px solid rgb(63, 63, 63);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & > *:nth-child(2) {
+    // background-color: pink;
+    padding-left: 2em;
+    height: 100%;
+    width: 100%;
+
+    .staff-details {
+      text-transform: uppercase;
+
+      ul li > *:nth-child(1) {
+        // background-color: yellow;
+        // color: #36b827;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-right: 1em;
+        text-underline-offset: 4px;
+      }
+
+      ul li > *:nth-child(2) {
+        // background-color: yellow;
+        line-height: 1.2em;
+        color: rgb(0, 0, 0);
+      }
+    }
+
+    li {
+      margin: 1.1em 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.staff-profile-image {
+  height: 30em;
+  border-radius: 1em;
+}
+
+.staff-profile-heading {
+  font-weight: bold;
+  text-align: center;
+  // text-align: left;
+  text-decoration: underline;
+  display: none;
+}

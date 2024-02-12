@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Login from "./LoginPage";
+import ErrorPage from "./ErrorPage";
+import SharedLayoutAdmin from "./admin templates/SharedLayoutAdmin";
+import OverviewAdmin from "./admin templates/OverviewAdmin";
+import OfficeLocation from "./admin templates/OfficeLocation";
+import Attendance from "./admin templates/EmployeesAtttendance";
+import Employees from "./admin templates/Employees";
+import EmployeeProfile from "./admin templates/EmployeeProfile";
+import AdminLeaves from "./admin templates/AdminLeaves";
+import AdminMsg from "./admin templates/AdminMsg";
+import SharedLayoutUser from "./staff templates/SharedLayoutUser";
+import OverviewStaff from "./staff templates/OverviewStaff";
+import StaffLeaves from "./staff templates/StaffLeaves";
 
-function App() {
-  const [count, setCount] = useState(0)
+const roles = {
+  Admin: "admin",
+  Staff: "staff",
+};
 
+const login = "user";
+
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/admin" element={<SharedLayoutAdmin />}>
+            <Route index element={<OverviewAdmin />} />
+            <Route path="attendance" element={<Attendance />} />
+            <Route path="employees" element={<Employees />} />
+            <Route path="leaves" element={<AdminLeaves />} />
+            <Route path="messages" element={<AdminMsg />} />
+            <Route path="officelocation" element={<OfficeLocation />} />
+            <Route path="staff-profile" element={<EmployeeProfile />} />
+          </Route>
+          <Route path="/staff" element={<SharedLayoutUser />}>
+            <Route index element={<OverviewStaff />} />
+            <Route path="leaves" element={<StaffLeaves />} />
+          </Route>
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

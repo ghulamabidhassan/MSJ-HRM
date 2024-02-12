@@ -1,0 +1,22 @@
+.error-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  transition: 400ms ease-in-out;
+}
+
+.error-icon {
+  transition: 400ms ease-in-out;
+  font-size: 1.5em;
+
+  &:hover {
+    color: red;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    scale: 1.3;
+  }
+}

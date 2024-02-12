@@ -1,0 +1,38 @@
+@use "alertpage";
+@use "error";
+@use "loginpage";
+@use "sharedlayoutadmin";
+@use "sidebar";
+@use "navbar";
+@use "basicreport";
+@use "overviewadmin";
+@use "ontimelogin";
+@use "officelocation";
+@use "employeesattendance";
+@use "employees";
+@use "employeeprofile";
+@use "adminmsg";
+@use "adminleaves";
+
+// staff style sheets
+
+@use "navbaruser";
+@use "sharedlayoutuser";
+@use "footeruser";
+@use "overviewstaff";
+@use "staffsidebar";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+}

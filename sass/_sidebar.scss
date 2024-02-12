@@ -1,0 +1,71 @@
+.sidebar {
+  height: 100vh;
+  width: 1em;
+  background-color: rgb(62, 211, 62);
+  padding: 1em 1em;
+  transition: 500ms ease-in-out;
+  overflow: hidden;
+  font-weight: 550;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  // border-right: 1px solid rgb(145, 139, 139);
+  border-right: 1px solid #36b827;
+}
+
+.sidebar-open {
+  transition: 500ms ease-in-out;
+  width: 12.5em;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.fa-bars {
+  font-size: 1.5em;
+  display: none;
+  color: white;
+  position: absolute;
+  right: 5%;
+  transition: 400ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 400ms ease-in-out;
+  }
+}
+
+.sidebar-menus {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.8s, opacity 0.8s linear;
+  margin-left: 1.5em;
+}
+
+.hide-menus {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.8s, opacity 0.8s linear;
+}
+
+.menu {
+  padding: 0.5em 0;
+  color: black;
+  text-decoration: none;
+  transition: 400ms ease-in-out;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0.5em 0;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.02;
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+    // color: blue;
+    color: rgb(62, 211, 62);
+  }
+}

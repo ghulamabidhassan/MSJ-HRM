@@ -1,0 +1,175 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+
+.desc {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.layout {
+  background-color: white;
+  height: auto;
+  width: auto;
+  padding: 2em 2em;
+  border-radius: 0.25em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.signIn {
+  display: flex;
+  flex-direction: column;
+}
+
+.signIn > * {
+  margin: 0.5em 0;
+}
+
+.finger {
+  margin: auto;
+  font-size: 3em;
+  color: green;
+  background-position: 100%;
+  transition: 400ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: #36b827;
+  }
+}
+
+.checkbox {
+  text-align: left;
+  margin-left: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .remember {
+    text-transform: capitalize;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+}
+
+.checkbox-input {
+  margin-right: 0.5em;
+}
+
+:is(.email, .password) {
+  padding: 0.7em 0.5em;
+  width: 20em;
+  border: 1px solid rgb(151, 149, 149);
+  border-radius: 0.25em;
+}
+
+:is(.email, .password)::placeholder {
+  opacity: 0.75;
+}
+
+:is(.email, .password):focus {
+  outline: 1px solid green;
+}
+
+:is(.email, .password):focus::placeholder {
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.btn-signIn {
+  padding: 0.75em 1em;
+  border: none;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background-color: green;
+  transition: 400ms ease-in-out;
+  border-radius: 0.25em;
+  text-transform: capitalize;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #36b827;
+  }
+}
+
+.forgot-password {
+  background-color: rgb(192, 192, 192);
+  margin-top: 1.5em;
+  padding: 0.75em 1.5em;
+  color: black;
+  border-radius: 3em;
+  font-size: 0.85em;
+  text-transform: capitalize;
+  transition: 300ms ease-in-out;
+  font-weight: 500;
+  opacity: 0.8;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+// .btn-signIn {
+//   background: linear-gradient(125deg, #60c855, #19ff00);
+//   background-size: 400% 400%;
+//   -webkit-animation: AnimationName 4s ease infinite;
+//   -moz-animation: AnimationName 4s ease infinite;
+//   animation: AnimationName 4s ease infinite;
+// }
+
+.main {
+  //   background: linear-gradient(125deg, #f1f6f9, #cdd6db);
+  background: linear-gradient(125deg, #ecf9ff, #cdd6db);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 15%;
+  }
+  50% {
+    background-position: 100% 86%;
+  }
+  100% {
+    background-position: 0% 15%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 15%;
+  }
+  50% {
+    background-position: 100% 86%;
+  }
+  100% {
+    background-position: 0% 15%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 15%;
+  }
+  50% {
+    background-position: 100% 86%;
+  }
+  100% {
+    background-position: 0% 15%;
+  }
+}

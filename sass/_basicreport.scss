@@ -1,0 +1,74 @@
+.main-report {
+  padding: 1.5em 0;
+}
+
+.basic-report {
+  font-size: 1.035em;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f6f9;
+}
+
+.report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: fit-content;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 500ms ease-in-out;
+  //   margin: 0 0.5em;
+
+  & > * {
+    margin: 0 1em;
+  }
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: 500ms ease-in-out;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+}
+
+.report-icon {
+  font-size: 4em;
+}
+
+.icon-bldg {
+  color: rgb(192, 128, 8);
+}
+
+.icon-users {
+  color: rgb(221, 65, 65);
+}
+
+.icon-user {
+  color: rgb(62, 211, 62);
+}
+
+.icon-clock {
+  color: rgb(70, 70, 221);
+}
+
+.report-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .report-title {
+    font-size: 0.75em;
+    text-transform: capitalize;
+    font-weight: bold;
+    opacity: 0.65;
+  }
+  .report-no {
+    font-size: 3em;
+    color: rgb(49, 49, 49);
+  }
+}

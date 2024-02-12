@@ -1,0 +1,45 @@
+.main-ontimelogin {
+  width: min-content;
+  height: auto;
+  // padding: 1em 1.5em;
+
+  & > * {
+    margin: 1.5em 0;
+  }
+
+  .login-two,
+  .content {
+    padding: 1em 1.5em;
+    margin: 2em 0em;
+    border-radius: 0.5em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 500ms ease-in-out;
+    // display: none;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+      scale: 1.05;
+      transition: 500ms ease-in-out;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+  }
+}
+
+.line-chart {
+  border-radius: 0.5em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 500ms ease-in-out;
+  padding: 0.85em;
+  height: auto;
+  background-color: white;
+  width: 20em;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: 500ms ease-in-out;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid blue;
+  }
+}

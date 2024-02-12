@@ -1,0 +1,39 @@
+.staff-sidebar-overlay {
+  height: 100vh;
+  background-color: rgba(160, 151, 151, 0.253);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.staff-sidebar-in {
+  background-color: white;
+  height: 100vh;
+  padding: 1.5em 2em;
+  position: absolute;
+  width: 60%;
+  right: 0%;
+  transition: 500ms ease-in-out;
+  z-index: 999;
+
+  .staff-icon-sidebar-close {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+  }
+
+  ul li {
+    list-style-type: none;
+    margin: 1.5em 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  }
+}

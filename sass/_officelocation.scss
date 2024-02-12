@@ -1,0 +1,103 @@
+.main-office-location {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 0.75em;
+  display: grid;
+  grid-template-columns: 1.3fr 4fr;
+  border-radius: 0.45em;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  color: rgb(49, 49, 49);
+  font-size: 0.9em;
+
+  & > * {
+    padding: 0.45em;
+  }
+}
+
+.office-img {
+  display: inline-block;
+  background-color: blue;
+  height: 10em;
+  width: 100%;
+}
+
+.office-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+
+    & > * {
+      //   background-color: pink;
+      padding: 0.5em 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > * {
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
+
+.office-col-2-child-right {
+  //   background-color: blue;
+
+  align-items: end;
+  text-transform: capitalize;
+
+  & {
+    // background-color: cyan;
+    width: 100%;
+    text-align: end;
+
+    & {
+      //   background-color: pink;
+
+      & > * {
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          scale: 1.02;
+          text-underline-offset: 5px;
+          color: #36b827;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.working-days {
+  //   background-color: blue;
+
+  & > * {
+    background-color: blue;
+
+    height: auto;
+    width: auto;
+    padding: 0.45em;
+    border-radius: 0.45em;
+
+    &:hover {
+      color: black;
+      scale: 1.5;
+    }
+  }
+}
+
+.holiday {
+  background-color: gray;
+}
+
+.office-icons {
+  color: #36b827;
+}

@@ -1,0 +1,26 @@
+.main-navbar-user {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0 1.5em;
+}
+
+.icon-user-bars {
+  font-size: 1.85em;
+  color: black;
+  cursor: pointer;
+}
+
+.user-navbar-logo {
+  height: 4em;
+  margin-top: 0.85em;
+  cursor: pointer;
+}
+
+.user-navbar-sec-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

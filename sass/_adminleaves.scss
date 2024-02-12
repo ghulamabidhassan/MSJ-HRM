@@ -1,0 +1,96 @@
+.main-admin-leaves {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 1.5em 0;
+  border-radius: 0.4em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .admin-leaves-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    // padding: 0em 1em 2em 1em;
+
+    thead {
+      tr {
+        // outline: 1px solid red;
+
+        th {
+          //   background-color: cyan;
+          padding: 1em 0;
+        }
+      }
+    }
+  }
+
+  .heading-info {
+    text-transform: capitalize;
+  }
+
+  .tr-body {
+    width: 100%;
+    border-top: 1px solid rgb(163, 156, 156);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    td {
+      text-align: center;
+      padding: 1em 0 1em 0;
+      //   border-top: 1px solid rgb(158, 150, 150);
+      //   background-color: cadetblue;
+    }
+  }
+
+  .leave-img {
+    height: 5.5em;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+
+  .leave-data {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leave-icon {
+    margin: 0 0.5em;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      scale: 1.2;
+      color: #36b827;
+    }
+  }
+
+  .leave-status {
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .leave-status-type {
+    padding: 0.5em;
+    // border: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background-color: orange;
+    color: white;
+  }
+}
